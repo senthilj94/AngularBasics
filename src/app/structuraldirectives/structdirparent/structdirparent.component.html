@@ -1,0 +1,18 @@
+<ng-template [ngIf]="users" [ngIfThen]="usersFound" [ngIfElse]="noUsersFound">
+    Users Found
+</ng-template>
+
+<ng-template #usersFound>
+    <div *ngFor="let user of users; index as i; first as isFirst; last as isLast; trackBy: getName">
+        <div [ngSwitch]="user.gender">
+            <div class="malebox" *ngSwitchCase="'m'">{{isFirst}}{{i}}{{user.name}}</div>
+            <div class="femalebox" *ngSwitchCase="'f'">{{i}}{{user.name}}</div>
+            <div class="default" *ngSwitchDefault>{{isLast}}{{i}}{{user.name}}</div>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #noUsersFound>
+    No Users Found!!!
+</ng-template>
+<button (click)="order()">Order</button>

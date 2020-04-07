@@ -1,0 +1,12 @@
+<h1>Hello {{name}}</h1>
+
+<div #userDiv>
+    <input ngModel #user/>
+    <button (click)="onSubmit(user, userDiv)">Get Reference</button>
+</div>
+
+<form #userForm="ngForm" (ngSubmit)="onSubmitForm(userForm)">
+    <input name="name" ngModel #userName/>
+    <input name="age" ngModel #userAge/>
+    <button type="submit">Get Form Reference</button>
+</form>
