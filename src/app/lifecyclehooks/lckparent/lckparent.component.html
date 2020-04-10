@@ -1,1 +1,4 @@
-<p>lckparent works!</p>
+<p>lckparent works {{parentName}}</p>
+<input [(ngModel)] = "parentName"/>
+<ng-content></ng-content>
+<app-lckchild childName="Nathan" type="child"></app-lckchild>

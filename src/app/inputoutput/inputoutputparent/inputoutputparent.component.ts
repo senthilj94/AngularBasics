@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputoutputparentComponent implements OnInit {
 
+  valueFromChildComponent: string;
+  valueFromChildComponentDifferentWay: string;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  setValueFromChild(event) {
+    console.log('Value from child', event);
+    this.valueFromChildComponent = event;
+  }
 }

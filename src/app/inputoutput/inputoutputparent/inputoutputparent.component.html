@@ -1,1 +1,5 @@
-<p>inputoutputparent works!</p>
+<p>Value from Child {{valueFromChildComponent}}</p>
+<app-inputoutputchild valueFromParentAlias="Senthil" 
+(valueFromChild)='setValueFromChild($event)'
+[differentMethod]='setValueFromChild.bind(this)'>
+</app-inputoutputchild>

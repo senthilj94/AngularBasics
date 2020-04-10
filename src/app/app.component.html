@@ -1,4 +1,12 @@
 <!-- Template Reference <app-templaterefparent name="{{name}}"></app-templaterefparent>-->
+
 <!-- Structural Directives <app-structdirparent></app-structdirparent>-->
+
+<!--Input Output Property <app-inputoutputparent></app-inputoutputparent>-->
+
+<app-lckparent *ngIf="show" parentName="Senthil">
+<app-lckchild type="content"></app-lckchild>
+</app-lckparent>
+<button (click)="toggle()">Show</button>
 
 <p>Basics of Angular Application!!!!</p>
