@@ -10,6 +10,8 @@ import { InputoutputparentComponent } from './inputoutput/inputoutputparent/inpu
 import { InputoutputchildComponent } from './inputoutput/inputoutputchild/inputoutputchild.component';
 import { TemplaterefparentComponent } from './templatereference/templaterefparent/templaterefparent.component';
 import { StructdirparentComponent } from './structuraldirectives/structdirparent/structdirparent.component';
+import { StylesparentComponent } from './styles/stylesparent/stylesparent.component';
+import { StyleschildComponent } from './styles/styleschild/styleschild.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { StructdirparentComponent } from './structuraldirectives/structdirparent
     InputoutputparentComponent,
     InputoutputchildComponent,
     TemplaterefparentComponent,
-    StructdirparentComponent
+    StructdirparentComponent,
+    StylesparentComponent,
+    StyleschildComponent
   ],
   imports: [
     BrowserModule,
