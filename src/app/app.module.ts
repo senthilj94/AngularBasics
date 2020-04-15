@@ -12,6 +12,9 @@ import { TemplaterefparentComponent } from './templatereference/templaterefparen
 import { StructdirparentComponent } from './structuraldirectives/structdirparent/structdirparent.component';
 import { StylesparentComponent } from './styles/stylesparent/stylesparent.component';
 import { StyleschildComponent } from './styles/styleschild/styleschild.component';
+import { HostparentComponent } from './hostbinding/hostparent/hostparent.component';
+import { HostchildComponent } from './hostbinding/hostchild/hostchild.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { StyleschildComponent } from './styles/styleschild/styleschild.component
     TemplaterefparentComponent,
     StructdirparentComponent,
     StylesparentComponent,
-    StyleschildComponent
+    StyleschildComponent,
+    HostparentComponent,
+    HostchildComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
