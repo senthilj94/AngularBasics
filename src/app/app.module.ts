@@ -15,7 +15,7 @@ import { StyleschildComponent } from './styles/styleschild/styleschild.component
 import { HostparentComponent } from './hostbinding/hostparent/hostparent.component';
 import { HostchildComponent } from './hostbinding/hostchild/hostchild.component';
 import { HighlightDirective } from './directives/highlight.directive';
-
+import { CustomstructuralDirective } from './directives/customstructural.directive';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { HighlightDirective } from './directives/highlight.directive';
     StyleschildComponent,
     HostparentComponent,
     HostchildComponent,
-    HighlightDirective
+    HighlightDirective,
+    CustomstructuralDirective
   ],
   imports: [
     BrowserModule,

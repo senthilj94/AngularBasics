@@ -7,12 +7,13 @@ import { Component, OnInit, OnDestroy, OnChanges, Input } from '@angular/core';
 })
 export class AppComponent {
 
+  display = true;
   name = 'AngularBasics';
   show = true;
 
   constructor() {}
 
   toggle() {
-    this.show = !this.show;
+    this.display = !this.display;
   }
 }
