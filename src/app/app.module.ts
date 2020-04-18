@@ -19,6 +19,7 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { CustomstructuralDirective } from './directives/customstructural.directive';
 import { PipeComponent } from './pipes/pipe/pipe.component';
 import { AppendPipe, FilterPipe } from './pipes/pipe/custom.pipe';
+import { ObservableComponent } from './observables/observable/observable.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AppendPipe, FilterPipe } from './pipes/pipe/custom.pipe';
     CustomstructuralDirective,
     PipeComponent,
     AppendPipe,
-    FilterPipe
+    FilterPipe,
+    ObservableComponent
   ],
   imports: [
     BrowserModule,
