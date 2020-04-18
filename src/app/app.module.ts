@@ -17,7 +17,7 @@ import { HostchildComponent } from './hostbinding/hostchild/hostchild.component'
 import { HighlightDirective } from './directives/highlight.directive';
 import { CustomstructuralDirective } from './directives/customstructural.directive';
 import { PipeComponent } from './pipes/pipe/pipe.component';
-import { AppendPipe } from './pipes/pipe/custom.pipe';
+import { AppendPipe, FilterPipe } from './pipes/pipe/custom.pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,8 @@ import { AppendPipe } from './pipes/pipe/custom.pipe';
     HighlightDirective,
     CustomstructuralDirective,
     PipeComponent,
-    AppendPipe
+    AppendPipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
